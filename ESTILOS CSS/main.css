@@ -1,0 +1,281 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(87, 52, 14 2)
+}
+
+/*CARRUSEL DE PORTADA*/
+
+.slider{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider ul{
+
+    display: flex;
+    width: 500%;
+    animation: cambio 20s infinite alternate /*linear*/;
+
+}
+
+.slider li{
+
+    width: 100%;
+    list-style: none;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+
+   
+}
+
+
+/*PRESENTACION Y FOTO DE PERFIL*/
+
+
+.contenedor_general_presentacion{
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(87,52,142);;
+}
+
+.contenedor_div_presentacion{
+    display: flex;
+    position: ;
+    height: 180px;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    /* background-color: teal; */
+}
+
+.imagen_presentacion{
+    display: block;
+    
+    width: 180px;
+    height: 180px;
+    
+    border: 2px solid red;
+   
+    
+}
+
+.imagen_presentacion img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* TEXTO DE PRESENTACION*/
+
+
+.contenedor_texto{
+    display: block;
+    /* background-color: aqua; */
+    width: 80%;
+    height: 45%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 30px;
+
+
+}
+
+.contenedor_texto1,
+.contenedor_texto2,
+.contenedor_texto3{
+
+    width: 100%;
+    height: 40px;
+    /* background-color: greenyellow; */
+    font-size: 40px;
+    margin: 10px;
+    font-family: "Titillium Web",sans-serif;
+    font-weight:bolder;
+    letter-spacing: 3;
+    color: beige;
+}
+
+.contenedor_texto2{
+    
+    font-size: 30px;
+    /* background-color: orange; */
+}
+
+.contenedor_texto3{
+    
+    font-size: 20px;
+    /* background-color: rgb(255, 0, 234); */
+    
+}
+
+
+/*NUESTROS PRODUCTOS*/
+
+
+h1{
+    
+    margin-bottom: 30px;
+    margin-top: 40px;
+    color: rgb(69, 69, 69);
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.contenedor_tarjeta{
+   
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-auto-rows: 400px;
+    column-gap: 20px;
+    row-gap: 20px;
+    /*width: 90%;
+    background-color: brown;*/ 
+    align-content: center;
+}
+
+
+.tarjeta{
+
+    display: block;
+    width: 250px;
+    height: 320px;
+    /* background-color:rgb(234, 12, 12); */
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.55);
+    
+}
+
+
+a.nombre_tarjeta{
+
+    display: flex;
+    background-color: rgb(235, 225, 225);
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family:'Titillium Web', sans-serif;
+    color: rgb(48, 48, 48);
+    width: 100%;
+    height:70px;
+    text-align: center;
+    
+}
+
+
+.tarjeta img{
+
+    height: 250px;
+    width: 250px;
+    
+}
+
+a.nombre_tarjeta:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+
+
+h2{
+    margin: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+
+@media(max-width: 1200px){
+
+    .contenedor_tarjeta{
+        grid-template-columns: repeat(3,300px);
+    }
+}
+
+@media(max-width: 970px){
+
+    .contenedor_tarjeta{
+        grid-template-columns: repeat(2,300px);
+    }
+}
+
+
+@media(max-width: 640px){
+
+    .contenedor_tarjeta{
+        grid-template-columns: repeat(1,300px);
+    }
+}
+
+
+
+
+    
+/* GRILLA DE HELADOS*/
+
+.contenedor_tarjeta_helados{
+
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    column-gap: 20px;
+    row-gap: 20px;
+    background-color: yellow;
+    
+
+}
+
+.tarjeta_helados{
+
+    
+    width: 250px;
+    height: 350px;
+    background-color: white;
+
+}
+
+@media(max-width: 1070px){
+    .contenedor_tarjeta_helados{
+        grid-template-columns: repeat(3,250px);
+    }
+}
+
+@media(max-width: 800px){
+    .contenedor_tarjeta_helados{
+        grid-template-columns: repeat(2,250px);
+    }
+}
+
