@@ -8,16 +8,17 @@
     height:90px;
     border: 2px solid rgb(4, 3, 3);
     padding: 0px;
+    z-index: 3;
 
 }
 
 /* IMAGEN */
 .logo{
      
-     padding: 0.5px;
+     padding: 5px;
      /* background-color: aqua;*/
      height:100%;
-     width:auto;
+     width:200px;
    
 }
 
@@ -70,10 +71,10 @@ li a.opcion_seleccionada,
 .opciones li :hover{
     background-color: rgb(255, 255, 255);
     color: rgb(87,52,142);
-    transition: all, .6s;
-    -webkit-transform: scale(1.2);
+    transition: 0.6s;
+    transform: scale(1.2);
     border-radius: 20px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     padding-block: 7px;
     padding-inline: 14px;
     font-size: 17px;
@@ -92,9 +93,9 @@ header .icono_menu{
     color:rgb(255, 255, 255);
 }
 
-/* Mas de 850 pixeles */
+/* Mas de 900 pixeles */
 
-/*@media(min-width:850px){
+/*@media(min-width:900px){
     .opciones{
         display:none;
     }
@@ -104,7 +105,7 @@ header .icono_menu{
     
 } */
 
-/* Menos de 850px */
+/* Menos de 900px */
 @media(max-width:900px){
     .opciones{
         display:none;
@@ -118,39 +119,45 @@ header .icono_menu{
 /*BOTON FLOTANTE DE WHATSAPP*/
 
 
-.boton_whatsapp{
+.btn_whatsapp, .btn_compras{
     
     position: fixed;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    bottom: 10px;
-    right: 10px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 15px;
+    background-color: rgba(0,230,118);
+    color: white;
     border-radius: 50px;
     text-align: center;
+    font-size: 40px;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.7);
+
+}
+
+.icono_whatsapp{
+    margin-top: 7px;  
+}
+
+.btn_whatsapp:hover, .btn_compras:hover{
     
-
-}
-
-
-.boton_whatsapp_img{
-
-    width: 50px;
-    height:50px;
-    background-color: green;
-    border-radius: 24px;
-}
-
-.boton_whatsapp:hover{
-
     text-decoration: none;
-    transition:all, .6s;
-    -webkit-transform:scale(1.4);
+    transition: 0.6s;;
+    transform:scale(1.29);
 }
 
+/* BOTON FLOTANTE DE CARRITO DE COMPRAS */
 
-.categorias_ocultas{
+.btn_compras{
 
-    display: none;
+    background-color: rgba(148,88,169,255);
+    color: white;
+    bottom: 110px;
+    font-size: 30px;
+    
+}
 
+.icono_compras{
+    padding-top: 11px;
 }

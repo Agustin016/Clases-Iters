@@ -12,90 +12,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eaffa7988b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../ESTILOS CSS/main.css">
-    <link rel="stylesheet" href="../ESTILOS CSS/encabezado.css">
-    <link rel="stylesheet" href="../ESTILOS CSS/normalizar.css">
+    <link rel="stylesheet" href="/ESTILOS CSS/main.css">
+    <link rel="stylesheet" href="/ESTILOS CSS/encabezado.css">
+    <link rel="stylesheet" href="/ESTILOS CSS/normalizar.css">
+    <link rel="stylesheet" href="/ESTILOS CSS/footer.css">
 </head>
 
+<!-- ENCABEZADO -->
 
 <header class="header">
     <div class="logo-header">
-        <a href="index.html"> <img class="logo" src="../img/logo_distribuidoraallana2.jpg" alt="logo">
+        <a href="index.html"> <img class="logo" src="/img/Logo/LOGO BLANCO SIN FONDO.png" alt="Distribuidora Allana">
     </div>
     <nav class="nav-menu">
         <ul class="opciones">
             <li>
-                <a href="/PAGINAS/index.html" class="opcion_seleccionada">HAZ TU PEDIDO</a>
+                <a href="/PAGINAS/index.html" class="opcion_seleccionada">INICIO</a>
             </li>
             <li>
-                <a href="/PAGINAS/contactanos.html">CONTACTANOS</a>
+                <a href="/PAGINAS/Compras.html">CARRITO DE COMPRAS</a>
             </li>
         </ul>
-        <ul class="categorias_ocultas">
-            <li>
-                <a href="/PAGINAS/Categorias/primont.html">CATEGORIA PRIMONT</a>
-            </li>
-            <li>
-                <a href="/PAGINAS/Categorias/velagge.html">CATEGORIA VELAGGE</a>
-            </li>
-            <li>
-                <a href="/PAGINAS/Categorias/alisados.html">CATEGORIA ALISADOS</a>
-            </li>
-            <li>
-                <a href="/PAGINAS/Categorias/accesorios_y_herramientas.html">CATEGORIA ACCESORIOS Y HERRAMIENTAS</a>
-            </li>
-            <li>
-                <a href="/PAGINAS/Categorias/barber.html">CATEGORIA BARBER</a>
-            </li>
-            <li>
-                <a href="/PAGINAS/Categorias/capas_y_delantales.html">CATEGORIA CAPAS Y DELANTALES</a>
-            </li>
-        </ul>
+        
         <i class="icono_menu fa-solid fa-bars"></i>
+        
     </nav>
-     
-    <div class="boton_whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=543855007194" class="boton_whatsapp" target="_blank"></a>
-            <img class="boton_whatsapp_img" src="/img/logo_wpp.png" alt="">
-    </div>
-    
+    <!-- BOTON FLOTANTE DE WHATSAPP -->
+    <a href="https://api.whatsapp.com/send?phone=543855251782" class="btn_whatsapp" target="_blank">
+        <i class="icono_whatsapp fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- BOTON FLOTATNE DE COMPRAS -->
+
+    <a href="/PAGINAS/Compras.html" class="btn_compras"> 
+        <i class="icono_compras fa-solid fa-bag-shopping"></i>
+    </a>
 
 </header>
 
+<!-- FIN DE ENCABEZADO -->
 <!-- INICIO DE PRESENTACION -->
 
 <main>
-    <!-- <div class="contenedor_slider"> -->
-    <div class="slider">
-        <ul>
-            <li><img src="../img/logo_distribuidoraallana.jpg" alt=""></li>
-            <li><img src="../img/img_portada1.jpg" alt=""></li>
-            <li><img src="../img/img_portada2.jpg" alt=""></li>
-            <li><img src="../img/img_portada3.jpg" alt=""></li>
-            <li><img src="../img/img_portada4.jpg" alt=""></li>
-        </ul>
-    </div>
-
-    <div class="contenedor_general_presentacion">
+    <!-- <div class="contenedor_slider ( CARRUSEL )"> -->
+    <div class="contenedor_de_contenedor_div_presentacion">  
+        <div class="slider">
+            <ul>
+                <li><img src="../img/Carrusel inicio/logo_distribuidoraallana2.jpg" alt="imagen presentacion 1"></li>
+                <li><img src="../img/Carrusel inicio/img_portada1.jpg" alt="imagen presentacion 2"></li>
+                <li><img src="../img/Carrusel inicio/img_portada2.jpg" alt="imagen presentacion 3"></li>
+                <li><img src="../img/Carrusel inicio/img_portada3.jpg" alt="imagen presentacion 4"></li>
+                <li><img src="../img/Carrusel inicio/img_portada4.jpg" alt="imagen presentacion 5"></li>
+            </ul>
+        </div>
         <div class="contenedor_div_presentacion" >
             <div class="imagen_presentacion">
-                <img src="/img/primont-logo.jpg" alt="">
+                <img src="/img/Primont/primont-logo.jpg" alt="logo principal">
             </div>
         </div>
+
+
+        <div class="contenedor_general_presentacion">
+            
+            
+            <section class="contenedor_texto">
+                <article class="contenedor_texto1">
+                    <span>Distribuidora Allana - Primont Santiago del Estero</span>
+                </article>
+                <article class="contenedor_texto2">
+                    <span>Primont Santiago del Estero</span>
+                </article>
+                <article class="contenedor_texto3"> 
+                    <span>Venta de Productos de Peluquería en el interior de la Provincia de Santiago del Estero</span>
+                </article>
+            </section>
+            
+        </div>
+
         
-        <section class="contenedor_texto">
-            <article class="contenedor_texto1">
-                <span>Distribuidora Allana - Primont Santiago del Estero</span>
-            </article>
-            <article class="contenedor_texto2">
-                <span>Primont Santiago del Estero</span>
-            </article>
-            <article class="contenedor_texto3"> 
-                <span>Venta de Productos de Peluquería en el interior de la Provincia de Santiago del Estero</span>
-            </article>
-        </section>
-        
-    </div>
+    </div>  
 
     <!-- FIN DE PRESENTACION -->
 
@@ -104,92 +98,41 @@
     
     <h1>NUESTROS PRODUCTOS</h1> 
     
-    <div class="contenedor_tarjeta">
-        <div class="tarjeta">
-            <div >
-                <img src="/img/primont.jpg" alt="">
-            </div>
-            <div>
-                <a href="/PAGINAS/Categorias/primont.html" class="nombre_tarjeta">PRIMONT</a>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <div >
-                <img src="/img/velagge3.jpg.png" alt="">
-            </div>
-            <div>
-                <a href="/PAGINAS/Categorias/velagge.html" class="nombre_tarjeta">VELAGGE</a>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <div >
-                <img src="/img/Alisados3.jpg" alt="">
-            </div>
-            <div>
-                <a href="/PAGINAS/Categorias/alisados.html" class="nombre_tarjeta">ALISADOS</a>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <div >
-                <img src="/img/ayh1.jpg" alt="">
-            </div>
-            <div>
-                <a href="/PAGINAS/Categorias/accesorios_y_herramientas.html" class="nombre_tarjeta">ACCESORIOS Y HERRAMIENTAS</a>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <div >
-                <img src="/img/barber.jpg" alt="">
-            </div>
-            <div>
-                <a href="/PAGINAS/Categorias/barber.html" class="nombre_tarjeta">BARBER</a>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <div >
-                <img src="/img/delantal1.jpg" alt="">
-            </div>
-            <div>
-                <a href="/" class="nombre_tarjeta">CAPAS Y DELANTALES</a>
-            </div>
-        </div>
-    </div>
+    <section class="contenedor_tarjeta">
+        <article class="tarjeta">
+            <img src="/img/Primont/categoria primont.jpg"  alt="primont">
+            <a href="/PAGINAS/Categorias/primont.html" class="nombre_tarjeta">PRIMONT</a> 
+        </article>
+        <article class="tarjeta">
+            <img src="/img/Velagge/categoria velagge2.jpg"  alt="velagge">
+            <a href="/PAGINAS/Categorias/velagge.html" class="nombre_tarjeta">VELAGGE</a>
+        </article>
+        <article class="tarjeta">
+            <img src="/img/Alisados/Categoria Alisados3.jpg"  alt="alisados">
+            <a href="/PAGINAS/Categorias/alisados.html" class="nombre_tarjeta">ALISADOS</a>
+        </article>
+        <article class="tarjeta">
+            <img src="/img/Accesorios y Herramientas/categoria ayh1.jpg"  alt="accesorios y herramientas">
+            <a href="/PAGINAS/Categorias/accesorios_y_herramientas.html" class="nombre_tarjeta">ACCESORIOS Y HERRAMIENTAS</a>
+        </article>
+        <article class="tarjeta">
+            <img src="/img/Barber/categoria barber.jpg"  alt=" barber style">
+            <a href="/PAGINAS/Categorias/barber.html" class="nombre_tarjeta">BARBER</a>
+        </article>
+        <article class="tarjeta">
+            <img src="/img/Capas y Delantales/categoria CYD delantal1.jpg"  alt="capas y delantales">
+            <a href="/PAGINAS/Categorias/capas_y_delantales.html" class="nombre_tarjeta">CAPAS Y DELANTALES</a>
+        </article>
+    </section> 
 
     <!-- FIN DE CATEGORIAS -->
 
-    <!-- <section class="contenedor_tarjeta">
-    <article class="tarjeta">
-        <img src="/img/primont.jpg"  alt="">
-        <a href="#" class="nombre_tarjeta">PRIMONT</a> 
-    </article>
-    <article class="tarjeta">
-        <img src="/img/primont.jpg"  alt="">
-        <a href="#" class="nombre_tarjeta">VELAGGE</a>
-    </article>
-    <article class="tarjeta">
-        <img src="/img/primont.jpg"  alt="">
-        <a href="#" class="nombre_tarjeta">ALISADOS</a>
-    </article>
-    <article class="tarjeta">
-        <img src="/img/ayh1.jpg"  alt="">
-        <a href="#" class="nombre_tarjeta">ACCESORIOS Y HERRAMIENTAS</a>
-    </article>
-    <article class="tarjeta">
-        <img src="/img/barber.jpg"  alt="">
-        <a href="#" class="nombre_tarjeta">BARBER</a>
-    </article>
-    <article class="tarjeta">
-        <img src="/img/delantal1.jpg"  alt="">
-        <a href="#" class="nombre_tarjeta">CAPAS Y DELANTALES</a>
-    </article>
-    </section> -->
 </main>
 
 
 
-<!-- LO TERMINO DESPUES
 
-<span>Rebozados</span>
+<!-- <span>Rebozados</span>
 
 
 <section class="contenedor_tarjeta_productos">
@@ -225,10 +168,9 @@
         <img src="" alt="">
 
     </article>
-</section>
--->
-<!--
-<h2>HELADOS</h2>
+</section> -->
+
+<!-- <h2>HELADOS</h2>
 
 <section class="contenedor_tarjeta_helados">
     <article class="tarjeta_helados"> 
@@ -266,80 +208,40 @@
         <span>Patitas de Pollo</span>
         
     </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-    <article class="tarjeta_helados"> 
-        
-        <img src="" alt="">
-        <a href=""></a>
-        <span>Patitas de Pollo</span>
-        
-    </article>
-</section>
+   
+</section> -->
 
--->
 
-</body>
+<footer class="pie_de_pagina">
+    <section class="grupo_1">
+        <article class="contenedor">
+            <figure>
+                <a href=""></a>
+                    <img src="/img/Logo/LOGO BLANCO SIN FONDO.png" alt="logo_distribuidora allana">
+            </figure>                     
+        </article>
+        <article class="contenedor">
+            <span class="span_1">SOBRE NOSOTROS</span>
+            <p>Somos una empresa dedicada a la venta de Productos, Accesorios y Herramientas de Peluquería Profesional</p>
+            <p>Trabajamos con marcas exlusivas de salón de altísima calidad para lograr el cuidado y tratamiento perfecto que tu cabello se merece</p>
+        </article>
+        <article class="contenedor">
+            <span class="span_2"> CONTACTANOS</span>
+            <div class="red_social">
+                <a href="https://www.facebook.com/distribuidoraallana/">FACEBOOK</a>
+                    <i class="footer_facebook fa-brands fa-square-facebook"></i>
+                <a href="https://api.whatsapp.com/send?phone=543855251782">WHATSAPP</a>
+                    <i class="footer_whatsapp fa-brands fa-whatsapp"></i>
+                <a href="">CORREO</a>
+                    <i class="footer_correofa -regular fa-envelope"></i>
+            </div>
+        </article>
+    </section>
+    <section class="grupo_2">
+        <span class="span_3">&copy; 2022 - Todos los Derechos Reservados</span>
+
+    </section>
+
+</footer>
 
 </html>

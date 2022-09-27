@@ -3,18 +3,30 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(87, 52, 14 2);
+  
+}
 
-    background-color: rgb(87, 52, 14 2)
+.contenedor_de_contenedor_div_presentacion{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+   
 }
 
 /*CARRUSEL DE PORTADA*/
 
 .slider{
+
     display: block;
     background-color: black;
     width: 100%;
     height: 400px;
     overflow: hidden;
+
 }
 
 .slider ul{
@@ -22,6 +34,7 @@ main{
     display: flex;
     width: 500%;
     animation: cambio 20s infinite alternate /*linear*/;
+    height: 100%;
 
 }
 
@@ -29,7 +42,7 @@ main{
 
     width: 100%;
     list-style: none;
-    height: 400px;
+    height: 100%;
     margin: 0;
     padding: 0;
     
@@ -40,6 +53,8 @@ main{
     width: 100%;
     height: 100%;
 }
+
+
 
 @keyframes cambio{
     0% { margin-left: 0;}
@@ -57,6 +72,52 @@ main{
    
 }
 
+@media(max-width:1300px){
+    .slider{
+        height: 420px;
+    }
+}
+@media(max-width:900px){
+    .slider{
+        height: 300px;
+    }
+
+}
+@media(max-width: 700px){
+    .slider{
+        height: 230px;
+    }
+}
+@media(max-width:570px){
+    .slider{
+        height: 160px;
+    }
+    
+    
+}
+
+
+/*  */
+
+@media(max-width:900){
+    .contenedor_div_presentacion{
+        /* width: 300px;
+        height: 300px;
+         */
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+
+    }
+}
+
+
+
+
+
+
 
 /*PRESENTACION Y FOTO DE PERFIL*/
 
@@ -65,33 +126,31 @@ main{
     display: block;
     width: 100%;
     height: 300px;
-    background-color: rgb(87,52,142);;
+    background-color: rgb(87,52,142);
+    
 }
 
 .contenedor_div_presentacion{
     display: flex;
-    position: ;
-    height: 180px;
-    width: 80%;
+    position: absolute;
     justify-content: center;
-    margin-left: 10%;
+    width: 100%;
+    top: 360px;
     /* background-color: teal; */
 }
 
 .imagen_presentacion{
+
     display: block;
-    
     width: 180px;
-    height: 180px;
-    
-    border: 2px solid red;
-   
-    
+
 }
 
 .imagen_presentacion img{
+
     width: 100%;
     height: 100%;
+   
 }
 
 
@@ -99,14 +158,15 @@ main{
 
 
 .contenedor_texto{
+    
     display: block;
-    /* background-color: aqua; */
-    width: 80%;
-    height: 45%;
+    background-color: aqua;
+    width: 100%;
+    height: 59%;
     text-align: center;
-    margin-left: 10%;
-    margin-top: 30px;
-
+    margin-top: 121px; 
+    align-content: center;
+    
 
 }
 
@@ -115,14 +175,16 @@ main{
 .contenedor_texto3{
 
     width: 100%;
-    height: 40px;
+    /* height: auto; */
+    
     /* background-color: greenyellow; */
-    font-size: 40px;
-    margin: 10px;
+    
+    font-size :40px;
     font-family: "Titillium Web",sans-serif;
     font-weight:bolder;
     letter-spacing: 3;
     color: beige;
+    
 }
 
 .contenedor_texto2{
@@ -137,6 +199,27 @@ main{
     /* background-color: rgb(255, 0, 234); */
     
 }
+
+@media(max-width:1200px){
+    .contenedor_texto{
+
+    }
+    .contenedor_texto1{
+        font-size: 35px;
+    }
+    .contenedor_texto2{
+        font-size: 25px;
+    }
+    .contenedor_texto3{
+        font-size: 15px}
+
+@media(max-width:970)
+
+
+
+}
+
+
 
 
 /*NUESTROS PRODUCTOS*/
@@ -162,6 +245,7 @@ h1{
     /*width: 90%;
     background-color: brown;*/ 
     align-content: center;
+    justify-items: center;
 }
 
 
@@ -193,7 +277,6 @@ a.nombre_tarjeta{
     
 }
 
-
 .tarjeta img{
 
     height: 250px;
@@ -202,10 +285,13 @@ a.nombre_tarjeta{
 }
 
 a.nombre_tarjeta:hover{
+    
     background-color: black;
     color: white;
     
 }
+
+
 
 
 
@@ -230,6 +316,10 @@ h2{
 
     .contenedor_tarjeta{
         grid-template-columns: repeat(2,300px);
+    }
+
+    .contenedor_texto{
+        font
     }
 }
 

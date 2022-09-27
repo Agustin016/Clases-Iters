@@ -1,7 +1,7 @@
 .contenedor_inicial{
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 120px;
     /* background-color: aqua; */
     margin-top: 25px;
 }
@@ -9,7 +9,7 @@
 .nombre_pagina{
     display: flex;
     width: 30%;
-    height: 150px;
+    height: auto;
     /* background-color: brown; */
     font-size: 50px;
     font-family: "Titillium Web",sans-serif;
@@ -25,5 +25,5 @@
 }
 .contenedor_img_pagina img{
     width: 90%;
-    height: 100%
+    height: auto;
 }
