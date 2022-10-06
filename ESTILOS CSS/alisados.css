@@ -1,0 +1,25 @@
+.contenedor_nombre_img{
+    display: flex;
+    width: 90%;
+    height: 150px;
+    /* background-color:rgba(176,80,143); */
+    margin: 5%;
+    margin-top: 20px;
+    
+}
+
+
+.contenedor_nombre_img .linea_de_productos_5 {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    font-family: "Titillium Web",sans-serif;    
+    text-align: center;
+    /* background-color: rgb(170, 7, 97); */
+    color: white;
+    background:linear-gradient(to left,rgb(80,41,120),rgb(148, 112, 192))
+}

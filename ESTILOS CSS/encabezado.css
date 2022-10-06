@@ -16,7 +16,7 @@
 .logo{
      
      padding: 5px;
-     /* background-color: aqua;*/
+     background-color: black;
      height:100%;
      width:200px;
    
@@ -41,14 +41,14 @@
 
 }
 
-li{
+.opciones li{
     display:flex;
     padding-inline: 10px;
     margin: 10px;
     height: 40px;
     justify-content:center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     font-size: 15px;
     border-radius: 20px;
     font-weight: 100;
@@ -58,7 +58,7 @@ li{
 }
 
 
-nav ul li{
+.nav-menu .opciones li{
     margin-right: 20px;
     background-color: rgb(87,52,142);
     border: 2px solid rgb(255, 255, 255);
@@ -70,7 +70,7 @@ li a.opcion_seleccionada,
 .opciones li a:active,
 .opciones li :hover{
     background-color: rgb(255, 255, 255);
-    color: rgb(87,52,142);
+    color: rgb(80,41,120);
     transition: 0.6s;
     transform: scale(1.2);
     border-radius: 20px;
@@ -122,9 +122,9 @@ header .icono_menu{
 .btn_whatsapp, .btn_compras{
     
     position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     bottom: 30px;
     right: 15px;
     background-color: rgba(0,230,118);
@@ -137,7 +137,7 @@ header .icono_menu{
 }
 
 .icono_whatsapp{
-    margin-top: 7px;  
+    margin-top: 5px;  
 }
 
 .btn_whatsapp:hover, .btn_compras:hover{
@@ -151,7 +151,7 @@ header .icono_menu{
 
 .btn_compras{
 
-    background-color: rgba(148,88,169,255);
+    background-color: rgba(148,88,169);
     color: white;
     bottom: 110px;
     font-size: 30px;
@@ -159,5 +159,5 @@ header .icono_menu{
 }
 
 .icono_compras{
-    padding-top: 11px;
+    padding-top: 9px;
 }

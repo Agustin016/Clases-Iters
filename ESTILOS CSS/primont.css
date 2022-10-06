@@ -1,0 +1,141 @@
+
+/* TEXTO DE LINEA E IMAGEN A LA DERECHA */
+
+/* PRIMONT COLOR Y CONTENEDORES SIGUENTES IGUALES A CONTENEDOR_NOMBRE_IMG */
+
+.contenedor_nombre_img{
+    display: flex;
+    width: 90%;
+    height: 150px;
+    /* background-color:rgba(176,80,143); */
+    margin: 5%;
+    margin-top: 20px;
+    
+}
+
+/* LINEA DE PRODUCTOS GENERAL CON MODIFICACION INDIVIDUAL EN COLORES */
+/* primont color */
+
+.linea_de_productos,.linea_de_productos_1,
+.linea_de_productos_2,.linea_de_productos_3,
+/* 4 y 6 son de categoria velagge y accesorios y herramientas*/
+.linea_de_productos_4,.linea_de_productos_6,
+/*7 y 8 son de categoria barber y capas y delantales*/
+.linea_de_productos_7,.linea_de_productos_8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: auto;
+    font-size: 35px;
+    font-family: "Titillium Web",sans-serif;    
+    text-align: center;
+    /* background-color: rgb(170, 7, 97); */
+    color: white;
+    background:linear-gradient(to left,rgb(80,41,120),rgb(148, 112, 192))  /*148, 112, 192*/
+}
+
+/*  TEXTO CONTENEDOR primont queration */
+
+.linea_de_productos_1{
+    color: white;
+    background:linear-gradient(to left,rgb(144, 0, 85),rgb(227, 126, 182)) /* 228,110,174 */
+}
+
+/*  TEXTO CONTENEDOR primont maroc oil */
+
+.linea_de_productos_2{
+    color: white;
+    background:linear-gradient(to left,rgba(148,91,20),rgb(240, 213, 122))
+}
+
+/* TEXTO CONTENEDOR primont btx */
+
+.linea_de_productos_3{
+    background:linear-gradient(to right,rgb(0,0,0),rgb(213,35, 35));
+    color:white;
+}
+
+/* CONTENEDOR GENERAL DE IMAGEN DE LINEA */
+
+.contenedor_img_linea{
+    /* background-color: aqua; */
+    margin-left: 30px;
+    justify-content: center;
+    width: 50%;
+    margin-left: 0;
+}
+
+.contenedor_img_linea img{
+    width: auto;
+    height: 100%;
+}
+
+
+/* PRODUCTOS */
+
+
+.contenedor_productos{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-auto-rows: 400px;
+
+    column-gap: 25px;
+    row-gap: 10px;
+
+    /* background-color: yellow; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tarjeta_producto{
+    display: block;
+    width: 270px;
+    height: 380px;
+    /* background-color: aquamarine; */
+    box-shadow: 6px 6px 7px 3px rgba(0,0,0,0.55);
+}
+
+
+.tarjeta_producto img{
+    display: flex;
+    width: 270px;
+    height: 270px;
+
+}
+
+.tarjeta_producto .nombre_producto{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family:'Titillium Web', sans-serif;
+    padding: 0;
+    background-color: rgb(235, 225, 225);
+    color: rgb(48, 48, 48);
+
+}
+
+.tarjeta_producto .nombre_producto:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.tarjeta_producto .agregar_carrito{
+    background-color: goldenrod;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-family:'Titillium Web', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+}

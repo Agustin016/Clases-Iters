@@ -160,7 +160,7 @@ main{
 .contenedor_texto{
     
     display: block;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     height: 59%;
     text-align: center;

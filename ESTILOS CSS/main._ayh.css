@@ -1,0 +1,14 @@
+/* Accesorios y Herramientas titulo de pagina */
+.nombre_pagina{
+    display: flex;
+    width: 30%;
+    height: auto;
+    /* background-color: brown; */
+    font-size: 40px;
+    font-family: "Titillium Web",sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    padding-left: 40px;
+}

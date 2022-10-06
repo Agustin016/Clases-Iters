@@ -1,0 +1,90 @@
+.contenedor_inicial{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    /* background-color: aqua; */
+    margin-top: 25px;
+}
+
+.nombre_pagina{
+    display: flex;
+    width: 30%;
+    height: auto;
+    /* background-color: brown; */
+    font-size: 50px;
+    font-family: "Titillium Web",sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+}
+
+.contenedor_img_pagina{
+    display: flex;
+    /* background-color: bisque; */
+    width: 70%;
+}
+.contenedor_img_pagina img{
+    width: 90%;
+    display: flex;
+    height: auto;
+}
+
+/* MENU DE CATEGORIAS*/
+.span_categorias{
+    display: flex;
+    margin-left: 50px;
+    font-size: 25px;
+    margin-top: 10px;
+    
+}
+
+.menu_categorias{
+    /* background-color: tomato; */
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+
+}
+
+.menu_categorias .categorias{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    width: 90%;
+    margin-inline: 6%;
+
+}
+
+
+.menu_categorias .categorias li{
+
+    background-color: rgb(253, 227, 255);
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content:center;
+    align-items: center;
+    text-align: center;    
+    
+
+}
+
+.menu_categorias .categorias li a{
+    display: flex;
+    border-right: 1px solid rgb(214, 214, 214);
+    padding-inline: 57px;
+    font-size: 20px;
+    /* background-color: blue; */
+   
+    height: 100%;
+    align-items:center;
+    color: black;
+}   
+
+
+.menu_categorias .categorias li a:hover,
+.menu_categorias .categorias li a.categoria_seleccionada{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
