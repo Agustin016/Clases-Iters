@@ -319,12 +319,12 @@ h2{
     }
 
     .contenedor_texto{
-        font
+        font-size: ;
     }
 }
 
 
-@media(max-width: 640px){
+@media(max-width:640px){
 
     .contenedor_tarjeta{
         grid-template-columns: repeat(1,300px);
@@ -335,9 +335,12 @@ h2{
 
 
     
+
+
+
 /* GRILLA DE HELADOS*/
 
-.contenedor_tarjeta_helados{
+/* .contenedor_tarjeta_helados{
 
     display: grid;
     grid-template-columns: repeat(4,250px);
@@ -368,4 +371,4 @@ h2{
         grid-template-columns: repeat(2,250px);
     }
 }
-
+ */
