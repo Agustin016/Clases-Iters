@@ -153,7 +153,41 @@ main{
    
 }
 
+@media(max-width:900px){
+    .contenedor_div_presentacion{
+        top:250px;
+    }
 
+    .imagen_presentacion{
+        width: 160px;
+    }
+}
+
+@media(max-width:800px){
+    .contenedor_general_presentacion{
+        height: auto;
+    }
+}
+
+@media(max-width:700px){
+    .contenedor_div_presentacion{
+        top: 190px;
+    }
+
+    .imagen_presentacion{
+        width: 150px;
+    }
+}
+
+@media(max-width:570px){
+    .contenedor_div_presentacion{
+        top: 140;
+    }
+
+    .imagen_presentacion{
+        width: 130px;
+    }
+}
 /* TEXTO DE PRESENTACION*/
 
 
@@ -175,10 +209,7 @@ main{
 .contenedor_texto3{
 
     width: 100%;
-    /* height: auto; */
-    
     /* background-color: greenyellow; */
-    
     font-size :40px;
     font-family: "Titillium Web",sans-serif;
     font-weight:bolder;
@@ -201,9 +232,6 @@ main{
 }
 
 @media(max-width:1200px){
-    .contenedor_texto{
-
-    }
     .contenedor_texto1{
         font-size: 35px;
     }
@@ -212,18 +240,9 @@ main{
     }
     .contenedor_texto3{
         font-size: 15px}
-
-@media(max-width:970)
-
-
-
 }
 
-
-
-
-/*NUESTROS PRODUCTOS*/
-
+/* NUESTROS PRODUCTOS */
 
 h1{
     
@@ -239,15 +258,14 @@ h1{
    
     display: grid;
     grid-template-columns: repeat(4,250px);
-    grid-auto-rows: 400px;
-    column-gap: 20px;
-    row-gap: 20px;
+    grid-auto-rows: 370px;
+    column-gap: 0px;
+    row-gap: 0px;
     /*width: 90%;
     background-color: brown;*/ 
     align-content: center;
     justify-items: center;
 }
-
 
 .tarjeta{
 
@@ -258,7 +276,6 @@ h1{
     box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.55);
     
 }
-
 
 a.nombre_tarjeta{
 
@@ -292,9 +309,6 @@ a.nombre_tarjeta:hover{
 }
 
 
-
-
-
 h2{
     margin: 40px;
     text-align: center;
@@ -302,10 +316,17 @@ h2{
 }
 
 
+@media(min-width:1301px){
+    .contenedor_texto{
+        margin-top: 140;
+    }
 
+    .contenedor_tarjeta{
+        column-gap: 30px;
+    }
+}
 
-
-@media(max-width: 1200px){
+@media(max-width: 1300px){
 
     .contenedor_tarjeta{
         grid-template-columns: repeat(3,300px);
@@ -317,12 +338,7 @@ h2{
     .contenedor_tarjeta{
         grid-template-columns: repeat(2,300px);
     }
-
-    .contenedor_texto{
-        font-size: ;
-    }
 }
-
 
 @media(max-width:640px){
 
@@ -331,10 +347,6 @@ h2{
     }
 }
 
-
-
-
-    
 
 
 

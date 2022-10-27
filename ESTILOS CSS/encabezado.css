@@ -35,7 +35,7 @@
 .opciones{
     display: flex;
     list-style-type: none;
-    width: 700px;
+    width: 500px;
     justify-content: center;
     align-items: center;
 
@@ -106,10 +106,56 @@ header .icono_menu{
 } */
 
 /* Menos de 900px */
-@media(max-width:900px){
+@media(max-width:800px){
     .opciones{
         display:none;
     }
+
+    .opciones_activo{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: calc(100vh - 90px);
+        top: 89px;;
+        width: 100%;
+        left: 0;
+        background-color: rgb(87,52,142);
+
+        
+    }
+
+    .opciones_activo li a, .opciones_activo li,
+    li a.opcion_seleccionada{
+        height: 60;
+        width: 90%;
+        font-size: 20px;
+        background-color: rgb(87,52,142);
+        color: white;
+        text-align: center;
+        border: 0 ;
+
+
+        padding-block: 20px;
+        transition: none;
+        transform: none;
+        border-radius: 0;
+    }
+    
+    
+    .opciones_activo, .opciones_activo li a:active,
+    .opciones_activo li:hover{
+    transition: 0,6s;
+    transform: none;
+    border-radius: 0;
+    /* border: 2px solid white; */
+    padding-block: 0px;
+    font-size: 20px;
+    width: 100%;
+    justify-content: start;
+    text-align: center;
+    top: 87px;
+}
+
     header .icono_menu{
         display:inline;
     }

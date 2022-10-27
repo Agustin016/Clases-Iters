@@ -1,6 +1,31 @@
-.contenedor_nombre_img .linea_de_productos_7{
-    width: 30%;
+.contenedor_nombre_img .linea_de_productos_8{
+
     color: rgb(0, 0, 0);
     background:linear-gradient(270deg,rgb(235,229,227),rgba(234,174,136));
+    
+}
+
+@media(max-width:650px){
+
+    .contenedor_nombre_img{
+        display: block;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+        
+    }
+
+    .contenedor_nombre_img .linea_de_productos_8{
+        background:linear-gradient(0deg,rgb(235,229,227),rgba(234,174,136));
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contenedor_nombre_img .contenedor_img_linea{
+        height: 100px;
+       
+    }
     
 }

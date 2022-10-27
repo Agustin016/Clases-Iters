@@ -1,5 +1,5 @@
 .pie_de_pagina{
-    margin-top: auto;
+    margin-top: 25px;
     width: 100%;
     background-color: black;
 }
@@ -30,7 +30,7 @@
 
 .pie_de_pagina .grupo_1 .contenedor .span_1,.span_2{
     color: white;
-    margin-bottom: 25px;
+    margin: 25px;
     font-size: 20px;
     margin-top: 20px;
     
@@ -39,7 +39,7 @@
 
 .pie_de_pagina .grupo_1 .contenedor p{
     color: bisque;
-    margin-bottom:20px;
+    margin-block:20px;
    
 }
 

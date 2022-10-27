@@ -1,5 +1,8 @@
-const icono_menu= document.querySelector(".icono_menu")
+const icono_menu= document.querySelector(".icono_menu");
+const opciones = document.querySelector(".opciones")
 
 icono_menu.addEventListener("click",()=>{
-    const opciones
+    
+    opciones.classList.toggle(".opciones_activo") 
 })
+

@@ -10,16 +10,91 @@
 
 
 .contenedor_nombre_img .linea_de_productos_5 {
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: auto;
     font-size: 35px;
     font-family: "Titillium Web",sans-serif;    
     text-align: center;
     /* background-color: rgb(170, 7, 97); */
     color: white;
-    background:linear-gradient(to left,rgb(80,41,120),rgb(148, 112, 192))
+    background:linear-gradient(to left,rgb(143,112,91),rgb(144, 114, 94),rgb(215, 201, 190));
+}
+
+
+@media(max-width:1024px){
+    .contenedor_nombre_img{
+        height: 130px;
+        margin-top: 50px;
+    }
+
+}
+@media(max-width:900px){
+    .contenedor_nombre_img .linea_de_productos_5{
+        font-size: 30px;
+    } 
+}
+
+@media(max-width:800px){
+    .contenedor_nombre_img{
+        width: 90%;
+        height: 100px;
+    }
+}
+
+@media(max-width:730px){
+    .contenedor_nombre_img .linea_de_productos_5{
+        font-size: 27px;
+    }
+}
+
+@media(max-width:700px){
+    .contenedor_nombre_img .linea_de_productos_5{
+        width: 52%;
+    
+    }
+     
+    .contenedor_nombre_img .contenedor_img_linea_5{
+        width: auto;
+    }
+
+    .contenedor_nombre_img .contenedor_img_linea_5 img{
+        width: 100%;
+    }
+    
+}
+
+@media(max-width:650px){
+    .contenedor_nombre_img .linea_de_productos_5{
+        display: none;
+    }
+}
+
+@media(max-width:500px){
+    .contenedor_nombre_img{
+        width: 100%;
+        margin: 0;
+        margin-block: 30px;
+    }  
+}
+
+@media(max-width:400px){
+    main .contenedor_inicial{
+        width: 100%;
+    }
+
+    .contenedor_inicial .contenedor_img_pagina{
+        display: flex;
+        width: 100%;
+        height: 80px;
+    }
+
+    main .contenedor_inicial .contenedor_img_pagina img{
+        display: flex;
+        width: 100%;
+        height: 80px;
+    }
 }

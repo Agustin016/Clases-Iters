@@ -14,14 +14,18 @@
 }
 
 /* LINEA DE PRODUCTOS GENERAL CON MODIFICACION INDIVIDUAL EN COLORES */
+
 /* primont color */
 
 .linea_de_productos,.linea_de_productos_1,
 .linea_de_productos_2,.linea_de_productos_3,
-/* 4 y 6 son de categoria velagge y accesorios y herramientas*/
-.linea_de_productos_4,.linea_de_productos_6,
-/*7 y 8 son de categoria barber y capas y delantales*/
-.linea_de_productos_7,.linea_de_productos_8{
+/* 4 y 5 son de categoria velagge y alisados*/
+.linea_de_productos_4,.linea_de_productos_5,
+/*6 y 7 son de categoria accesorios y herramientas*/
+.linea_de_productos_6,.linea_de_productos_7,
+/*8 y 9 son de categoria barber y capas y delantales*/
+.linea_de_productos_8,.linea_de_productos_9{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,21 +36,23 @@
     text-align: center;
     /* background-color: rgb(170, 7, 97); */
     color: white;
-    background:linear-gradient(to left,rgb(80,41,120),rgb(148, 112, 192))  /*148, 112, 192*/
+    background:linear-gradient(to left,rgb(80,41,120),rgb(148, 112, 192));  
 }
 
 /*  TEXTO CONTENEDOR primont queration */
 
 .linea_de_productos_1{
     color: white;
-    background:linear-gradient(to left,rgb(144, 0, 85),rgb(227, 126, 182)) /* 228,110,174 */
+    background:linear-gradient(to left,rgb(144, 0, 85),rgb(227, 126, 182)); /* 228,110,174 */
+    width: 70%;
 }
 
 /*  TEXTO CONTENEDOR primont maroc oil */
 
 .linea_de_productos_2{
     color: white;
-    background:linear-gradient(to left,rgba(148,91,20),rgb(240, 213, 122))
+    background:linear-gradient(to left,rgba(148,91,20),rgb(240, 213, 122));
+    width: 70%;
 }
 
 /* TEXTO CONTENEDOR primont btx */
@@ -54,20 +60,26 @@
 .linea_de_productos_3{
     background:linear-gradient(to right,rgb(0,0,0),rgb(213,35, 35));
     color:white;
+    width: 70%;
 }
 
 /* CONTENEDOR GENERAL DE IMAGEN DE LINEA */
 
 .contenedor_img_linea{
+    width: 100%;
+}
+.contenedor_img_linea_1,
+.contenedor_img_linea_2,.contenedor_img_linea_3{
     /* background-color: aqua; */
     margin-left: 30px;
     justify-content: center;
-    width: 50%;
+    width: auto;
     margin-left: 0;
 }
 
-.contenedor_img_linea img{
-    width: auto;
+.contenedor_img_linea img,.contenedor_img_linea_1 img,
+.contenedor_img_linea_2 img,.contenedor_img_linea_3 img{
+    width: 100%;
     height: 100%;
 }
 
@@ -165,46 +177,217 @@
 
 @media(max-width:1024px){
     .contenedor_nombre_img{
-        height: 100px;
+        height: 130px;
         margin-top: 50px;
-        width: 80%;
+    }
+
+    .contenedor_nombre_img .contenedor_img_linea_1 img{
+        width: auto;
     }
 
     main .contenedor_inicial{
-        height: 90px;
-        width: 90%;
+        height: 130px;
+        width: 100%;
         justify-content: center;
         text-align: center;
         align-items: center;
         font-size: 30px;
     }
-    .contenedor_inicial .nombre_pagina{
-        font-size: 30px;
+
+    main .contenedor_inicial .nombre_pagina{
+        font-size: 45px;
+        padding-left: 23px;
     }
-    .contenedor_img_pagina{
-        height: 80px;
+
+    main .contenedor_inicial .contenedor_img_pagina{
+        height: 100%;
+    }
+
+    main .contenedor_inicial .contenedor_img_pagina img{
+        width: 100%;
+        height: 100%;
     }
 }
 
 @media(max-width:900px){
+    main .contenedor_nombre_img{
+        width: 90%;
+        margin-bottom: 50px;
+    
+    }
+
+    main .contenedor_inicial .contenedor_img_pagina img{
+        width:100%;
+        height: 100%;
+    }
+
     .contenedor_productos{
         grid-template-columns: repeat(2,270px);
     }
-    main .contenedor_inicial .contenedor_img_pagina img{
-        width: 470px;
-        height: 81;
-    }
+
     .menu_categorias{
         height: 150px;
         
     }
 }
 
-@media(max-width:780px){
+@media(max-width:800px){
+
+    main .contenedor_inicial{
+        display: flex;
+        height: 110px;
+        width: 100%;   
+    }
+    main .contenedor_inicial .nombre_pagina{
+        font-size: 40;
+    }
     .menu_categorias{
-       
-        flex-wrap: wrap;
+        height: 250px;
+    }
+
+    .contenedor_nombre_img{
+        width: 90%;
+        height: 100px;
+    }
+}
+
+
+
+@media(max-width:700px){
+    .linea_de_productos_1,
+    .linea_de_productos_2,.linea_de_productos_3{
+        width: 70%;
+    }
+     
+    .contenedor_nombre_img .contenedor_img_linea_1{
+        width: auto;
+    }
+
+    .contenedor_nombre_img .contenedor_img_linea_1 img{
+        width: 100%;
+    }
+    
+    .menu_categorias .categorias li{
+        width: 200px;
+    
+    }
+}
+
+@media(max-width:650px){
+    main .contenedor_inicial{
+        margin-inline: 5%;
+        height: 100px;
+        width: 90%;
+
+    }
+    main .contenedor_inicial .nombre_pagina{
+        display: none;
+    }
+
+    main .contenedor_inicial .contenedor_img_pagina{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    main .contenedor_inicial .contenedor_img_pagina img{
+        width: 100%;
+        height: 100%;
+    }
+    .contenedor_nombre_img{
+        width: 90%;
         height: 100px;
     }
 
+    .linea_de_productos{
+        display: none;
+    }
+
+    .contenedor_nombre_img .contenedor_img_linea{
+        width:  100%;
+        height: 100%;
+       
+    }
+
+    .contenedor_nombre_img .contenedor_img_linea img{
+        width:  100%;
+        height: 100%;
+       
+    }
 }
+
+@media(max-width:600px){
+    main .contenedor_inicial{
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .contenedor_productos{
+        grid-template-columns: repeat(1, 270px);
+    }
+
+    .contenedor_nombre_img{
+        width: 90%;
+        height: 100px;
+    }
+}
+
+@media(max-width:500px){
+
+    main .contenedor_inicial{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    main .contenedor_inicial .contenedor_img_pagina{
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    main .contenedor_inicial .contenedor_img_pagina img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        margin-top: -30px;
+    }
+
+    .contenedor_nombre_img{
+        width: 100%;
+        margin: 0;
+        margin-block: 30px;
+    }
+
+    .contenedor_nombre_img .contenedor_img_linea_1,
+    .contenedor_img_linea_2, .contenedor_img_linea_3{
+        width: 45%;
+    }
+
+    
+}
+
+@media(max-width:400px){
+    main .contenedor_inicial{
+        width: 100%;
+    }
+
+    .contenedor_inicial .contenedor_img_pagina{
+        display: flex;
+        width: 100%;
+        height: 80px;
+    }
+
+    main .contenedor_inicial .contenedor_img_pagina img{
+        display: flex;
+        width: 100%;
+        height: 80px;
+    }
+}
+
